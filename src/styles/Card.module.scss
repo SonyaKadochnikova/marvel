@@ -1,0 +1,50 @@
+@import './variables';
+
+.contanier {
+  border: 1px solid $secondary-color;
+  height: 32vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; 
+}
+
+.contanier img {
+  width: 100%;  
+  height: 50%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.text {
+  flex-direction: column;
+  padding: 10pt 10pt;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  overflow: hidden; 
+}
+
+.title {
+  font-family: $font-open-sans;
+  font-weight: $bold;
+  font-size: $card-title-font-size;
+  color: $primary-color;
+  margin: 0;
+  margin-bottom: 8pt;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+.description {
+  font-family: $font-open-sans;
+  font-weight: $regular;
+  font-size: $card-description-font-size;
+  margin: 0;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+}
