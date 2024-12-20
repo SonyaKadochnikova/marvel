@@ -1,0 +1,21 @@
+@import './variables';
+
+.container {
+  margin-top: auto; 
+  display: flex;
+  flex-direction: column;
+  background-color: $footer-color;
+  padding: 24pt 20pt;
+    
+}   
+
+.container p {
+  color: white;
+  font-weight: $regular;
+    font-family: $font-open-sans;
+    font-size: 12pt;  
+}
+
+.container img {
+  width: 5pc;
+}
